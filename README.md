@@ -22,7 +22,7 @@ This project implements an **end-to-end data pipeline** using **PySpark** and **
 ---
 
 ## 📂 Directory Structure
-
+├── data/ # Raw and processed datasets ├── scripts/ # Python scripts for ETL pipeline │ ├── extract.py # Extracts data from CSV │ ├── transform.py # Cleans and transforms data │ ├── load.py # Loads data into DuckDB │ ├── notebooks/ # Jupyter notebooks for analysis ├── visualizations/ # Tableau dashboards & insights ├── README.md # Project documentation
 
 ---
 
@@ -33,14 +33,17 @@ Ensure Python 3.x is installed, then install dependencies:
 
 ```sh
 pip install pyspark duckdb
-
+🔹 Run the Pipeline
+Execute the ETL pipeline step-by-step:
 python3 scripts/extract.py
 python3 scripts/transform.py
 python3 scripts/load.py
 
-### 📂 Large Files
-Due to size limitations, large files are stored externally. You can download them from this link:
+### 📂 Large Files  
+Due to size limitations, large files are stored externally. You can download them from the link below:  
 
-🔗 [Download Data File](https://drive.google.com/drive/folders/1gJD_VtexnS7mv01XG65GyL3rR3DP8Lpu?usp=sharing)
+🔗 [Download Large Files](https://drive.google.com/drive/folders/1gJD_VtexnS7mv01XG65GyL3rR3DP8Lpu?usp=sharing)
+
+
 
 
