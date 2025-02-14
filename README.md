@@ -41,19 +41,6 @@ Due to size limitations, large files are stored externally. You can download the
 [🔗 Download Large Files](https://drive.google.com/drive/folders/1gJD_VtexnS7mv01XG65GyL3rR3DP8Lpu?usp=sharing)  
 
 
-## ⚙️ How to Run
-
-### 🔹 **Setup Environment**
-Ensure Python 3.x is installed, then install dependencies:
-
-```sh
-pip install pyspark duckdb
-🔹 Run the Pipeline
-Execute the ETL pipeline step-by-step:
-python3 scripts/extract.py
-python3 scripts/transform.py
-python3 scripts/load.py
-
 📊 Data Processing Steps  
 
 1️⃣ **Handling Missing Values**  
@@ -94,6 +81,21 @@ The processed data is visualized using **Tableau** to derive meaningful insights
 📌 **High-value transactions accounted for 30% of total revenue**.  
 
 
+
+
+
+## ⚙️ How to Run
+
+### 🔹 **Setup Environment**
+Ensure Python 3.x is installed, then install dependencies:
+
+```sh
+pip install pyspark duckdb
+🔹 Run the Pipeline
+Execute the ETL pipeline step-by-step:
+python3 scripts/extract.py
+python3 scripts/transform.py
+python3 scripts/load.py
 
 
 
