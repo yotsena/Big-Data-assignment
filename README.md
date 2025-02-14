@@ -26,6 +26,14 @@ This project implements an **end-to-end data pipeline** using **PySpark** and **
 
 ---
 
+
+## 📂 Large Files  
+
+Due to size limitations, large files are stored externally. You can download them from the link below:  
+
+[🔗 Download Large Files](https://drive.google.com/drive/folders/1gJD_VtexnS7mv01XG65GyL3rR3DP8Lpu?usp=sharing)  
+
+
 ## ⚙️ How to Run
 
 ### 🔹 **Setup Environment**
@@ -41,10 +49,10 @@ python3 scripts/load.py
 
 
 
-📂 Large Files
-Due to size limitations, large files are stored externally. You can download them from the link below:
 
-🔗 Download Large Files
+
+
+
 
 
 
