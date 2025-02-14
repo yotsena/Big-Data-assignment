@@ -20,11 +20,17 @@ This project implements an **end-to-end data pipeline** using **PySpark** and **
    - Stores transformed data into **DuckDB**, a lightweight OLAP database.
 
 ---
+📂 Project Directory Structure
+├── data/                    # Raw and processed datasets  
+├── scripts/                 # Python scripts for ETL pipeline  
+│   ├── extract.py           # Extracts data from CSV  
+│   ├── transform.py         # Cleans and transforms data  
+│   ├── load.py              # Loads data into DuckDB  
+│
+├── notebooks/               # Jupyter notebooks for analysis  
+├── visualizations/          # Tableau dashboards & insights  
+├── README.md                # Project documentation  
 
-## 📂 Directory Structure
-├── data/ # Raw and processed datasets ├── scripts/ # Python scripts for ETL pipeline │ ├── extract.py # Extracts data from CSV │ ├── transform.py # Cleans and transforms data │ ├── load.py # Loads data into DuckDB │ ├── notebooks/ # Jupyter notebooks for analysis ├── visualizations/ # Tableau dashboards & insights ├── README.md # Project documentation
-
----
 
 
 ## 📂 Large Files  
@@ -46,6 +52,35 @@ Execute the ETL pipeline step-by-step:
 python3 scripts/extract.py
 python3 scripts/transform.py
 python3 scripts/load.py
+
+📊 Data Processing Steps
+1️⃣ Handling Missing Values
+Column	Action Taken
+CustAccountBalance	Filled missing values with 0
+CustGender & Brand	Replaced missing values with "Unknown"
+2️⃣ Transaction Type Categorization
+A new column transaction_type was added based on price range:
+
+Price Range	Category
+price > 10000	High Value
+1000 < price ≤ 10000	Medium Value
+price ≤ 1000	Low Value
+
+3️⃣ Filtering Data
+Removed rows where price ≤ 0 (invalid transactions).
+📊 Tableau Visualizations
+The processed data is visualized using Tableau to derive meaningful insights.
+
+🔗 Key Dashboards:
+✅ Sales Trends Over Time
+✅ Sales by Location
+✅ Transaction Types
+✅ Customer Segmentation
+
+🔹 Insights from the Data
+📌 Sales peaked in December, likely due to holiday shopping.
+📌 Customers in Mumbai contributed the highest revenue.
+📌 High-value transactions accounted for 30% of total revenue.
 
 
 
