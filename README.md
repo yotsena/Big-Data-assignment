@@ -1,5 +1,5 @@
 # E-commerce Data Pipeline (PySpark)  
-**Author:** Etsubdink Tadesse  
+**Name:** Etsubdink Tadesse  
 **ID:** DBUR/3971/13  
 
 📌 **Overview**  
@@ -39,10 +39,12 @@ python3 scripts/extract.py
 python3 scripts/transform.py
 python3 scripts/load.py
 
-### 📂 Large Files  
-Due to size limitations, large files are stored externally. You can download them from the link below:  
 
-🔗 [Download Large Files](https://drive.google.com/drive/folders/1gJD_VtexnS7mv01XG65GyL3rR3DP8Lpu?usp=sharing)
+
+📂 Large Files
+Due to size limitations, large files are stored externally. You can download them from the link below:
+
+🔗 Download Large Files
 
 
 
